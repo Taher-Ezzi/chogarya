@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOGARYA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CHOGARYA</h1>
+
+        <!-- Input Form -->
+        <form id="time-form">
+            <label for="sunrise">Sunrise:</label>
+            <input type="time" id="sunrise" value="06:00" required>
+
+            <label for="sunset">Sunset:</label>
+            <input type="time" id="sunset" value="18:00" required>
+
+            <label for="next-sunrise">Next Day's Sunrise:</label>
+            <input type="time" id="next-sunrise" placeholder="Optional">
+
+            <label for="day">Day of the Week:</label>
+            <select id="day" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+
+            <button type="submit">Generate</button>
+        </form>
+
+        <!-- Day Table -->
+        <h2>Day Table</h2>
+        <table id="day-table">
+            <thead>
+                <tr>
+                    <th>Part</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Taseer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Night Table -->
+        <h2>Night Table</h2>
+        <table id="night-table">
+            <thead>
+                <tr>
+                    <th>Part</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Taseer</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
